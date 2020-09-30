@@ -39,9 +39,9 @@ class LapPaceDemoView extends WatchUi.SimpleDataField {
   }
 
   function compute(info) {
-  	if (info.elapsedDistance == null) {
-  	  return "...";
-  	}
+    if (info.elapsedDistance == null) {
+      return "...";
+    }
     if (System.getTimer() < showLastLapTime) {
       // Show last lap pace
       return "Last " + pace100m(lastLapTime / lastLapDistance);
